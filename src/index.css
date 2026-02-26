@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: 'PixelCaps!';
+    src: url('./assets/fonts/PixelCaps!.otf') format('opentype');
+}
+
 body {
     color: white;
+    font-family: Nunito, sans-serif;
+    @apply bg-gray-900;
 }
