@@ -7,7 +7,7 @@ const Navigation = () => {
                 className="flex fixed w-full h-[5rem] justify-center
              items-center bg-transparent border-b border-gray-700
               backdrop-blur-sm backdrop-brightness-50 select-none">
-                <ul className="flex gap-10 items-center text-xl">
+                <ul className="flex gap-10 items-center text-sm nav-font">
                     <li>
                         <a href="#">Home</a>
                     </li>
@@ -16,7 +16,7 @@ const Navigation = () => {
                     </li>
                     <li>
                         <h1
-                            className="nav-title">
+                            className="text-4xl">
                             Frostii
                         </h1>
                     </li>

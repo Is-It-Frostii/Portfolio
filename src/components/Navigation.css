@@ -1,6 +1,4 @@
-.nav-title {
+.nav-font {
     font-family: 'PixelCaps!';
     line-height: 1;
-    transform: translateY(0.15em);
-    @apply text-4xl;
 }
