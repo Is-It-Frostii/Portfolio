@@ -1,4 +1,25 @@
 .nav-font {
     font-family: 'PixelCaps!';
     line-height: 1;
+    letter-spacing: 2px;
+}
+
+.nav-link {
+    position: relative;
+    width: max-content;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    background-color: white;
+    height: 3px;
+    width: 0%;
+    left: -1px;
+    bottom: -8px;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
 }

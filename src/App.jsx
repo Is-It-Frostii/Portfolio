@@ -1,9 +1,7 @@
-import Home from "./pages/Home";
-import Patch from "./pages/Patch";
-
 import Grainient from "./components/Grainient";
 
 import "./App.css";
+import SpotlightCard from "./components/SpotlightCard";
 
 const App = () => {
     return (
@@ -15,7 +13,7 @@ const App = () => {
                     color1="#c285ff"
                     color2="#000000"
                     color3="#3dfcff"
-                    timeSpeed={0.1}
+                    timeSpeed={0.2}
                     colorBalance={0}
                     warpStrength={1}
                     warpFrequency={5}
@@ -37,10 +35,135 @@ const App = () => {
                 />
             </div>
             <section id="home">
-                <Home />
+                <div className="h-screen grid place-items-center">
+                    <div className="max-w-screen-lg flex flex-col gap-10 text-center">
+                        <h1 className="text-8xl hero-title">
+                            Hi, this is Frostii
+                        </h1>
+                        <div
+                            style={{
+                                fontFamily: `'Press Start 2P', cursive`,
+                            }}>
+                            <p className="text-2xl">
+                                A beginner working with{" "}
+                                <span className="text-purple-500 font-bold">
+                                    Pure Data
+                                </span>
+                            </p>
+                            <p className="text-xl">
+                                <br />I design simple audio patches to explore
+                                how sound works. I experiment with basic
+                                oscillators, filters,
+                                <br />
+                                and sliders to understand signal flow and
+                                control. Each small project helps me improve my
+                                logic,
+                                <br />
+                                organization, and understanding of digital sound
+                                design.
+                                <br />I aim to build clean, simple, and
+                                functional patches while steadily growing my
+                                skills.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </section>
-            <section id="patches">
-                <Patch />
+            <section id="plugins">
+                <h1
+                    className="text-center my-40 section-title">
+                    Plugins
+                </h1>
+                {/* <div className="h-screen grid place-items-center">
+                    <div className="block">
+                        <h1 className="text-4xl font-bold mb-6">
+                            FR-Resonator
+                        </h1>
+                        <p>
+                            FR-Resonators is a 7-voice resonator plugin built in
+                            Plugdata.
+                            <br />
+                            Each voice features independent gain, panning, and
+                            detuning controls,
+                            <br /> letting you shape rich harmonic textures,
+                            wide stereo movement,
+                            <br /> and evolving tonal layers from any input
+                            sound.
+                        </p>
+                        <a
+                            href="#"
+                            className="mt-6 p-3 px-6 bg-blue-500 w-fit rounded-full block">
+                            Coming Soon...
+                        </a>
+                    </div>
+                </div> */}
+
+                <div>
+                    <SpotlightCard
+                        className="rounded-xl m-10"
+                        spotlightColor="rgba(0, 229, 255, 0.2)">
+                        <div className="block">
+                            <h1 className="text-4xl font-bold mb-6">
+                                FR-Resonator
+                            </h1>
+                            <p>
+                                FR-Resonators is a 7-voice resonator plugin
+                                built in Plugdata.
+                                <br />
+                                Each voice features independent gain, panning,
+                                and detuning controls,
+                                <br /> letting you shape rich harmonic textures,
+                                wide stereo movement,
+                                <br /> and evolving tonal layers from any input
+                                sound.
+                            </p>
+                            <a
+                                href="#"
+                                className="mt-6 p-3 px-6 bg-green-500 w-fit rounded-full block">
+                                Coming Soon...
+                            </a>
+                        </div>
+                    </SpotlightCard>
+                    <SpotlightCard
+                        className="rounded-xl m-10"
+                        spotlightColor="rgba(255, 255, 255, 0.2)">
+                        <div className="block">
+                            <h1 className="text-4xl font-bold mb-6">
+                                FR-PhaseDistortion
+                            </h1>
+                            <p className="max-w-[50%] text-balance">
+                                Maybe planned for future development. Feel free
+                                to reach out if you're interested in
+                                collaborating on this project!
+                            </p>
+                            <a
+                                href="#"
+                                className="mt-6 p-3 px-6 bg-gray-500 w-fit rounded-full block">
+                                Coming Soon...
+                            </a>
+                        </div>
+                    </SpotlightCard>
+                </div>
+            </section>
+            <section id="contact">
+                <div className="h-screen grid place-items-center">
+                    <div className="block">
+                        <h1 className="text-4xl font-bold mb-6 section-title text-center">
+                            Get in Touch
+                        </h1>
+                        <p className="text-xl max-w-screen-md mx-auto" style={{fontFamily: `'Press Start 2P', cursive`}}>
+                            I'm currently open to new opportunities and
+                            collaborations. Whether you have a project in mind,
+                            want to discuss potential work together, or just
+                            want to say hi, feel free to reach out!
+                        </p>
+                        {/* <a
+                            href="mailto:contact@frosty.dev"
+                            className="mt-6 p-3 px-6 bg-blue-500 w-fit rounded-full block">
+                            contact@frosty.dev
+                        </a> */}
+                    </div>
+                </div>
             </section>
         </>
     );
