@@ -7,10 +7,11 @@
     src: url('./assets/fonts/PixelCaps!.otf') format('opentype');
     font-display: swap;
     descent-override: 0%;
+    ascent-override: 100%;
 }
 
 body {
     color: white;
     font-family: Nunito, sans-serif;
-    @apply bg-gray-900;
+    @apply antialiased;
 }

@@ -12,7 +12,7 @@ const Navigation = () => {
                         <a href="#">Home</a>
                     </li>
                     <li>
-                        <a href="#">Patches</a>
+                        <a href="#patches">Patches</a>
                     </li>
                     <li>
                         <h1
